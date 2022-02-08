@@ -116,7 +116,7 @@ const RenderBars = (props: Props) => {
               spacing / 2,
             left: -6,
             position: 'absolute',
-            bottom: rotateLabel ? -40 : -25,
+            bottom: rotateLabel ? -40 : -40,
           },
           rotateLabel
             ? props.horizontal
@@ -133,7 +133,7 @@ const RenderBars = (props: Props) => {
         ) : (
           <Text
             style={[labelTextStyle, {textAlign: 'center'}]}
-            numberOfLines={1}>
+            numberOfLines={2}>
             {label || ''}
           </Text>
         )}
@@ -172,7 +172,7 @@ const RenderBars = (props: Props) => {
         ) : (
           <Text
             style={[labelTextStyle, {textAlign: 'center'}]}
-            numberOfLines={1}>
+            numberOfLines={2}>
             {label || ''}
           </Text>
         )}
